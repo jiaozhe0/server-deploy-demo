@@ -9,11 +9,11 @@ module.exports = {
 
   deploy: {
     production: {
-      user: 'root',
-      host: '192.168.99.12',
+      user: 'jiaozhe',
+      host: '81.70.44.252',
       ref: 'origin/master',
       repo: 'git@github.com:jiaozhe0/server-deploy-demo.git',
-      path: '/root/jiaozhe/http',
+      path: '/home/jiaozhe/http',
       'pre-deploy-local': '',
       'post-deploy': 'pm2 reload ecosystem.config.js --env production',
       'pre-setup': ''
