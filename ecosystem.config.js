@@ -1,8 +1,15 @@
 module.exports = {
   apps: [{
     script: 'index.js',
-    watch: '.'
-  }],
+    watch: '.',
+    "env": {
+      "COMMON_VARIABLE": "true"
+    },
+    "env_production": {
+      "NODE_EMV": "production"
+    }
+  },
+  ],
 
   deploy: {
     production: {
