@@ -19,7 +19,8 @@ module.exports = {
       repo: 'git@github.com:jiaozhe0/server-deploy-demo.git',
       path: '/home/pc/test',
       'pre-deploy-local': '',
-      'post-deploy': 'pm2 reload ecosystem.config.js --env production',
+      // 'post-deploy': 'pm2 reload ecosystem.config.js --env production',
+      'post-deploy': 'pm2 -v',
       'pre-setup': ''
     }
   }
